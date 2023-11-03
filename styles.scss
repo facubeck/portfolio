@@ -14,6 +14,8 @@
 
 // Custom sizes
 $arrow: 70vh;
+$title: 'finis-bold';
+$text: 'Encode Sans';
 
 * {
   margin: 0;
@@ -28,7 +30,8 @@ body {
 
 .section {
   margin-inline: 15%;
-  margin-top: 50px;
+  border: 1px solid red;
+  padding: 15px;
 }
 
 header {
@@ -37,12 +40,12 @@ header {
   margin-top: 180px !important;
 
   h1 {
-    font-family: "finis-bold";
+    font-family: $title;
     font-size: 80px;
   }
 
   h2 {
-    font-family: "Encode Sans", sans-serif;
+    font-family: $text, sans-serif;
     font-size: 20px;
     font-weight: 400;
     margin-left: max(350px, 40%);
@@ -84,6 +87,12 @@ header {
   }
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 280px;
+}
+
 .projects {
   margin-top: $arrow;
   position: relative;
@@ -92,7 +101,6 @@ header {
   gap: 180px;
 
   .project-container {
-    margin-inline: 15px;
     .data {
       display: flex;
       gap: 10px;
@@ -102,7 +110,7 @@ header {
       }
 
       div.text {
-        font-family: "Encode Sans", sans-serif;
+        font-family: $text, sans-serif;
         font-size: 16px;
         text-wrap: wrap;
         font-weight: 500;
@@ -113,7 +121,7 @@ header {
     }
 
     h1.subtitle {
-      font-family: "finis-bold";
+      font-family: $title;
       font-size: 45px;
       text-decoration: underline;
       margin-bottom: 15px;
@@ -129,6 +137,56 @@ header {
 
     h1.subtitle {
       text-align: end;
+    }
+  }
+}
+
+.about-me {
+  h1 {
+    font-family: $title;
+    font-size: 80px;
+  }
+  .text {
+    margin-left: max(350px, 40%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    p {
+      font-family: $text, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
+.my-skills {
+  h1 {
+    font-family: $title;
+    font-size: 80px;
+  }
+  ul.icons {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 0;
+    width: 100%;
+    padding: 0 200px 0 300px;
+    margin-top: 80px;
+    .cell {
+      flex: 0 0 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: 60px;
+      }
+
+      h3 {
+        font-family: $text;
+      }
     }
   }
 }
