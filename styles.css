@@ -24,13 +24,13 @@ body {
 
 .section {
   margin-inline: 15%;
+  margin-top: 50px;
 }
 
 header {
-  border: 1px solid lightblue;
   display: flex;
   flex-direction: column;
-  margin-top: 180px;
+  margin-top: 180px !important;
 }
 header h1 {
   font-family: "finis-bold";
@@ -51,7 +51,7 @@ header div.arrow {
   position: relative;
 }
 header div.arrow .vertical {
-  height: 420px;
+  height: 78vh;
   width: 1px;
   background-color: black;
   position: absolute;
@@ -72,4 +72,43 @@ header div.arrow .vertical:before {
 header div.arrow .vertical:after {
   left: 3px;
   transform: rotate(45deg);
+}
+
+.projects {
+  margin-top: 70vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+}
+.projects .project-container {
+  margin-inline: 15px;
+}
+.projects .project-container .data {
+  display: flex;
+  gap: 10px;
+}
+.projects .project-container .data img {
+  width: 70%;
+}
+.projects .project-container .data div.text {
+  font-family: "Encode Sans", sans-serif;
+  font-size: 16px;
+  text-wrap: wrap;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.projects .project-container h1.subtitle {
+  font-family: "finis-bold";
+  font-size: 45px;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+.projects .project-container:nth-of-type(2) .data img {
+  order: 2;
+}
+.projects .project-container:nth-of-type(2) h1.subtitle {
+  text-align: end;
 }/*# sourceMappingURL=styles.css.map */

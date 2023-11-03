@@ -12,6 +12,9 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700&display=swap");
 
+// Custom sizes
+$arrow: 70vh;
+
 * {
   margin: 0;
   padding: 0;
@@ -25,13 +28,13 @@ body {
 
 .section {
   margin-inline: 15%;
+  margin-top: 50px;
 }
 
 header {
-  border: 1px solid lightblue;
   display: flex;
   flex-direction: column;
-  margin-top: 180px;
+  margin-top: 180px !important;
 
   h1 {
     font-family: "finis-bold";
@@ -54,14 +57,15 @@ header {
     position: relative;
 
     .vertical {
-      height: 420px;
+      height: 78vh;
       width: 1px;
       background-color: black;
       position: absolute;
       right: 0;
 
-      &:before, &:after {
-        content: '';
+      &:before,
+      &:after {
+        content: "";
         position: absolute;
         height: 10px;
         width: 1px;
@@ -76,6 +80,55 @@ header {
         left: 3px;
         transform: rotate(45deg);
       }
+    }
+  }
+}
+
+.projects {
+  margin-top: $arrow;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+
+  .project-container {
+    margin-inline: 15px;
+    .data {
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 70%;
+      }
+
+      div.text {
+        font-family: "Encode Sans", sans-serif;
+        font-size: 16px;
+        text-wrap: wrap;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+
+    h1.subtitle {
+      font-family: "finis-bold";
+      font-size: 45px;
+      text-decoration: underline;
+      margin-bottom: 15px;
+    }
+  }
+
+  .project-container:nth-of-type(2) {
+    .data {
+      img {
+        order: 2;
+      }
+    }
+
+    h1.subtitle {
+      text-align: end;
     }
   }
 }
