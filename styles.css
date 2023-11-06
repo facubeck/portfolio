@@ -192,7 +192,9 @@ footer .contact-me .links {
 footer .contact-me .link {
   display: flex;
 }
-footer .contact-me .link h3 {
+footer .contact-me .link a {
+  text-decoration: none;
+  font-size: 18px;
   position: relative;
   font-family: "Encode Sans", sans-serif;
   font-weight: 400;

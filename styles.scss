@@ -226,7 +226,9 @@ footer {
     }
     .link {
       display: flex;
-      h3 {
+      a {
+        text-decoration: none;
+        font-size: 18px;
         position: relative;
         font-family: "Encode Sans", sans-serif;
         font-weight: 400;
