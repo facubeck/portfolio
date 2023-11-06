@@ -22,9 +22,8 @@ body {
   width: 100%;
 }
 
-.section {
+.container {
   margin-inline: 15%;
-  border: 1px solid red;
   padding: 15px;
 }
 
@@ -210,4 +209,13 @@ footer .contact-me .link:nth-of-type(3) img {
   width: 90px;
   bottom: -30px;
   left: 50%;
+}
+
+.goodbye {
+  margin-top: 50px;
+  padding: 50px 0;
+  text-align: center;
+  font-family: "Encode Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
 }/*# sourceMappingURL=styles.css.map */
