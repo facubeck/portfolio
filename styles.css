@@ -87,12 +87,29 @@ main {
   flex-direction: column;
   gap: 180px;
 }
+.projects .project-container h1.subtitle {
+  font-family: "finis-bold";
+  font-size: 45px;
+  text-decoration: underline;
+  margin-bottom: 15px;
+  transition: all ease-in-out 400ms;
+}
+.projects .project-container a {
+  color: black;
+}
 .projects .project-container .data {
   display: flex;
   gap: 10px;
 }
+.projects .project-container .data .image-link {
+  min-width: 70%;
+  transition: ease-in-out all 500ms;
+}
+.projects .project-container .data .image-link:hover {
+  scale: 1.01;
+}
 .projects .project-container .data img {
-  width: 70%;
+  width: 100%;
 }
 .projects .project-container .data div.text {
   font-family: "Encode Sans", sans-serif;
@@ -103,13 +120,7 @@ main {
   flex-direction: column;
   gap: 30px;
 }
-.projects .project-container h1.subtitle {
-  font-family: "finis-bold";
-  font-size: 45px;
-  text-decoration: underline;
-  margin-bottom: 15px;
-}
-.projects .project-container:nth-of-type(2) .data img {
+.projects .project-container:nth-of-type(2) .data a {
   order: 2;
 }
 .projects .project-container:nth-of-type(2) h1.subtitle {
@@ -125,7 +136,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 .about-me .text p {
   font-family: "Encode Sans", sans-serif;

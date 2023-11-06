@@ -101,12 +101,33 @@ main {
   gap: 180px;
 
   .project-container {
+    h1.subtitle {
+      font-family: $title;
+      font-size: 45px;
+      text-decoration: underline;
+      margin-bottom: 15px;
+      transition: all ease-in-out 400ms;
+    }
+
+    a {
+      color: black;
+    }
+
     .data {
       display: flex;
       gap: 10px;
 
+      .image-link {
+        min-width: 70%;
+        transition: ease-in-out all 500ms;
+
+        &:hover {
+          scale: 1.01;
+        }
+      }
+
       img {
-        width: 70%;
+        width: 100%;
       }
 
       div.text {
@@ -119,18 +140,11 @@ main {
         gap: 30px;
       }
     }
-
-    h1.subtitle {
-      font-family: $title;
-      font-size: 45px;
-      text-decoration: underline;
-      margin-bottom: 15px;
-    }
   }
 
   .project-container:nth-of-type(2) {
     .data {
-      img {
+      a {
         order: 2;
       }
     }
@@ -151,7 +165,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 80px;
     p {
       font-family: $text, sans-serif;
       font-size: 16px;
@@ -254,7 +268,7 @@ footer {
   margin-top: 50px;
   padding: 50px 0;
   text-align: center;
-  font-family: 'Encode Sans', sans-serif;
+  font-family: "Encode Sans", sans-serif;
   font-weight: 500;
   font-size: 18px;
 }
