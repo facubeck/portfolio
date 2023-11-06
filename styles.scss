@@ -193,6 +193,7 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
+      transition: ease-in-out 300ms all;
       svg {
         width: 60px;
       }
@@ -200,6 +201,10 @@ main {
       h3 {
         font-family: $text;
         text-align: center;
+      }
+
+      &:hover {
+        scale: 1.1;
       }
     }
   }
@@ -216,7 +221,7 @@ footer {
 
     .links {
       display: grid;
-      grid-template: repeat(2, 1fr) / repeat(2, 50%);
+      grid-template: 40px 140px / repeat(2, 50%);
       padding-bottom: 40px;
     }
     .link {
@@ -225,6 +230,8 @@ footer {
         position: relative;
         font-family: "Encode Sans", sans-serif;
         font-weight: 400;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.7);
       }
       img {
         width: 180px;
@@ -233,7 +240,9 @@ footer {
     }
 
     .link:nth-of-type(1) {
-      margin-left: 400px;
+      grid-column: 2 / 3;
+      justify-content: baseline;
+      position: relative;
 
       img {
         top: -80px;
@@ -242,8 +251,9 @@ footer {
     }
 
     .link:nth-of-type(2) {
-      margin-top: 80px;
-      margin-left: 140px;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      justify-content: center;
 
       img {
         bottom: -80px;
@@ -252,13 +262,49 @@ footer {
     }
 
     .link:nth-of-type(3) {
-      margin-top: -20px;
-      margin-left: 140px;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      justify-content: center;
 
       img {
         width: 90px;
-        bottom: -30px;
+        bottom: -120px;
         left: 50%;
+      }
+    }
+
+    .link:nth-of-type(2),  .link:nth-of-type(3) {
+      align-items: center;
+    }
+
+    .copy-bubble {
+      position: relative;
+      top: -70px;
+      left: -190px;
+      background: rgb(56, 56, 56);
+      color: white !important;
+      font-family: "Encode Sans", sans-serif;
+      font-size: 14px;
+      padding: 5px;
+      border-radius: 5px;
+      width: 125px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: all ease-in-out 300ms;
+
+      &:after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 10px solid;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        border-color: rgb(56, 56, 56) transparent transparent transparent;
       }
     }
   }
