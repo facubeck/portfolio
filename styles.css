@@ -20,6 +20,7 @@
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -111,7 +112,7 @@ main {
 .projects .project-container {
   position: relative;
 }
-.projects .project-container .triangles ul {
+.projects .project-container #triangle {
   left: auto;
   right: -220px;
   top: 150px;
@@ -297,8 +298,8 @@ footer .contact-me .copy-bubble:after {
   border-color: rgb(56, 56, 56) transparent transparent transparent;
 }
 
-.about-me .triangles ul,
-.my-skills .triangles ul {
+.about-me #triangle,
+.my-skills #triangle {
   top: -30px;
 }
 

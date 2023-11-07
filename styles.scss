@@ -26,6 +26,7 @@ $text: "Encode Sans";
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -34,28 +35,28 @@ body {
   position: relative;
 }
 
-  #triangle {
-    position: absolute;
-    left: -200px;
-    display: grid;
-    grid-template-rows: repeat(3, 63px);
-    grid-template-columns: repeat(2, 95px);
+#triangle {
+  position: absolute;
+  left: -200px;
+  display: grid;
+  grid-template-rows: repeat(3, 63px);
+  grid-template-columns: repeat(2, 95px);
+  transition: all ease-in-out 250ms;
+
+  div {
     transition: all ease-in-out 250ms;
+    width: 0;
+    height: 0;
+    border: solid;
+    border-width: 33px 0px 33px 100px;
+    border-color: transparent transparent transparent black;
 
-    div {
-      transition: all ease-in-out 250ms;
-      width: 0;
-      height: 0;
-      border: solid;
-      border-width: 33px 0px 33px 100px;
-      border-color: transparent transparent transparent black;
-
-      &:nth-of-type(2),
-      &:nth-of-type(4) {
-        margin-top: 31.5px;
-      }
+    &:nth-of-type(2),
+    &:nth-of-type(4) {
+      margin-top: 31.5px;
     }
   }
+}
 
 header {
   display: flex;
@@ -125,13 +126,11 @@ main {
 
   .project-container {
     position: relative;
-    .triangles {
-      ul {
-        left: auto;
-        right: -220px;
-        top: 150px;
-        transform: rotate(180deg);
-      }
+    #triangle {
+      left: auto;
+      right: -220px;
+      top: 150px;
+      transform: rotate(180deg);
     }
 
     h1.subtitle {
@@ -347,11 +346,9 @@ footer {
 }
 
 .about-me,
-.my-skills{
-  .triangles {
-    ul {
-      top: -30px;
-    }
+.my-skills {
+  #triangle {
+    top: -30px;
   }
 }
 
