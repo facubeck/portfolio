@@ -34,17 +34,16 @@ body {
   position: relative;
 }
 
-.triangles {
-  ul {
+  #triangle {
     position: absolute;
     left: -200px;
-    list-style: none;
     display: grid;
     grid-template-rows: repeat(3, 63px);
     grid-template-columns: repeat(2, 95px);
+    transition: all ease-in-out 250ms;
 
-    li {
-      content: "";
+    div {
+      transition: all ease-in-out 250ms;
       width: 0;
       height: 0;
       border: solid;
@@ -57,7 +56,6 @@ body {
       }
     }
   }
-}
 
 header {
   display: flex;
