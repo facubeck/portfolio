@@ -43,17 +43,21 @@ links.forEach((link) => {
 // Make triangles rotate
 const triangles = document.querySelectorAll("#triangle");
 triangles.forEach((div) => {
-    let element = div;
-    element.addEventListener('mouseenter', e => {
-        console.log(e);
-        for(const child of e.target.children) {{
-            child.style.transform = 'rotate(180deg)'
-        }}
-    })
-    element.addEventListener('mouseleave', e => {
-        console.log(e);
-        for(const child of e.target.children) {{
-            child.style.transform = 'rotate(360deg)'
-        }}
-    })
-})
+  let element = div;
+  element.addEventListener("mouseenter", (e) => {
+    console.log(e);
+    for (const child of e.target.children) {
+      {
+        child.style.transform = "rotate(180deg)";
+      }
+    }
+  });
+  element.addEventListener("mouseleave", (e) => {
+    console.log(e);
+    for (const child of e.target.children) {
+      {
+        child.style.transform = "rotate(360deg)";
+      }
+    }
+  });
+});
