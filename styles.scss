@@ -167,9 +167,6 @@ main {
         font-size: 1rem;
         text-wrap: wrap;
         font-weight: 500;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
       }
     }
   }
@@ -194,15 +191,10 @@ main {
   }
   .text {
     margin-left: max(350px, 40%);
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     margin-top: 80px;
-    p {
-      font-family: $text, sans-serif;
-      font-size: 1rem;
-      font-weight: 500;
-    }
+    font-family: $text, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
   }
 }
 

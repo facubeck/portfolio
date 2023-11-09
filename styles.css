@@ -147,9 +147,6 @@ main {
   font-size: 1rem;
   text-wrap: wrap;
   font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 .projects .project-container:nth-of-type(2) .data a {
   order: 2;
@@ -164,12 +161,7 @@ main {
 }
 .about-me .text {
   margin-left: max(350px, 40%);
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
   margin-top: 80px;
-}
-.about-me .text p {
   font-family: "Encode Sans", sans-serif;
   font-size: 1rem;
   font-weight: 500;
