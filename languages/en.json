@@ -1,0 +1,13 @@
+{
+    "principal": {
+        "welcome": "hi! i´m a front-end developer based in buenos aires. <br> take a look at some of my projects <div class='arrow'><div class='vertical'></div></div>",
+        "letterboxd": " this is a letterboxd.com home and profile section clone. <br><br> the reason i did this website in particular and not another one is because i love films and letterboxd is a great app and website to log and reviews them. <br><br> the website is only the design bit and it was done with html, css and js.",
+        "mercadolibre": " this is a mercadolibre.com.ar post clone. <br><br> in this case, the post is selling an album vinyl of “mr morale and the big steppers”. <br><br> it was done with html, css and javascript. <br><br>",
+        "aboutme": "my name is facundo beck. <br><br> i’m a self-made front-end developer. the past year i’ve been studying on my own with the the odin project course and a load of other development courses. <br><br> i love doing creative things and i believe that web development it to its full potential. my goal is to keep improving my abilities in both personal and professional terms. <br><br>"
+    },
+    "titulos": {
+        "aboutme": "ABOUT ME",
+        "skills": "MY SKILLS",
+        "contact": "CONTACT<br>ME"
+    }
+}

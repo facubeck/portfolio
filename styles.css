@@ -49,6 +49,19 @@ body {
   margin-top: 31.5px;
 }
 
+#flags {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 5px 10px;
+  font-size: 1.125rem;
+  font-family: "Encode Sans", sans-serif;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -301,7 +314,7 @@ footer .contact-me .copy-bubble:after {
   text-align: center;
   font-family: "Encode Sans", sans-serif;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -322,6 +335,10 @@ footer .contact-me .copy-bubble:after {
   }
   #triangle div:nth-of-type(2), #triangle div:nth-of-type(4) {
     margin-top: 20px;
+  }
+  #flags {
+    font-size: 1.3rem;
+    padding: 5px 0;
   }
   header h1 {
     margin-left: 75px;
@@ -385,6 +402,7 @@ footer .contact-me .copy-bubble:after {
     margin-top: 150px;
   }
   footer .contact-me .links {
+    margin-top: 100px;
     grid-template: 40px 140px/40% 60%;
   }
   footer .contact-me .link img {

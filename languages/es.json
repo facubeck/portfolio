@@ -1,0 +1,13 @@
+{
+    "principal": {
+        "welcome": "hola! soy un desarrollador front-end de buenos aires. <br> mirá algunos de mis projectos <div class='arrow'><div class='vertical'></div></div>",
+        "letterboxd": "este projecto es un clon del inicio y de la pestaña perfil de letterboxd.com <br><br> la razón por la que cloné este sitio web y no otro es porque amo mirar peliculas y letterboxd es una gran aplicación y sitio web para escribir sobre ellas y logearlas <br><br> el sitio web es solo la parte del diseño y se hizo solo con html, css y javascript",
+        "mercadolibre": "este projecto es un clon de una tipica publicación en mercadolibre.com.ar <br><br> en este caso es una publicación que vende un disco de vinilo de 'mr morale and the big steppers'<br><br> el sitio web es solo la parte del diseño y se hizo solo con html, css y javascript",
+        "aboutme": "mi nombre es facundo beck <br><br> soy un desarrollador front-end autodidacta. el ultimo año estuve estudiando por mi cuenta con el curso 'the odin project' y una variedad de otras fuentes de información <br><br> me encanta hacer cosas creativas y creo que el diseño y desarrollo web lo impulsa al máximo potencial. mi objetivo es seguir mejorando mis habilidades tanto personales como profesionales <br><br>"
+    },
+    "titulos": {
+        "aboutme": "SOBRE MI",
+        "skills": "MIS HABILIDADES",
+        "contact": "CONTACTÁME"
+    }
+}

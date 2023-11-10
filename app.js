@@ -45,7 +45,6 @@ const triangles = document.querySelectorAll("#triangle");
 triangles.forEach((div) => {
   let element = div;
   element.addEventListener("mouseenter", (e) => {
-    console.log(e);
     for (const child of e.target.children) {
       {
         child.style.transform = "rotate(180deg)";
@@ -53,7 +52,6 @@ triangles.forEach((div) => {
     }
   });
   element.addEventListener("mouseleave", (e) => {
-    console.log(e);
     for (const child of e.target.children) {
       {
         child.style.transform = "rotate(360deg)";
@@ -61,3 +59,23 @@ triangles.forEach((div) => {
     }
   });
 });
+
+// Change language
+const textsToChange = document.querySelectorAll("[data-section]");
+const flagsElement = document.getElementById("flags");
+
+flagsElement.addEventListener("change", (e) => {
+  changeLanguage(e.target.value);
+});
+
+const changeLanguage = async (language) => {
+  const requestJson = await fetch(`languages/${language}.json`);
+  const texts = await requestJson.json();
+
+  for(textToChange of textsToChange) {
+    const section = textToChange.dataset.section;
+    const valor = textToChange.dataset.value;
+
+    textToChange.innerHTML = texts[section][valor];
+  }
+};
